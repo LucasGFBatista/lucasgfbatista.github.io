@@ -229,21 +229,21 @@ footer {
 
 /*      SERVICES      */
 
-.service-itens{
+.services-itens{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px auto));
-  gap: 2rem;
+  grid-gap: 2rem;
   align-items: center;
   text-align: justify;
 }
 
 .service-item{
-  margin: 50px;
+  padding: 50px;
   transition: ease .50s;
   cursor: pointer;
 }
 
-.service-item-image{
+.service-item-image img {
   max-width: 100%;
   width: 80px;
   height: auto;

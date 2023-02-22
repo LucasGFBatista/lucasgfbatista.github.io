@@ -231,7 +231,7 @@ footer {
 
 .services-itens{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px auto));
+  grid-template-columns: repeat(auto-fit, minmax(210px, auto));
   grid-gap: 2rem;
   align-items: center;
   text-align: justify;

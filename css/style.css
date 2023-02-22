@@ -200,6 +200,30 @@ footer {
 }
 
 /*      ABOUT ME      */
+.about{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  grid-gap: 2rem;
+
+}
+.about img {
+  max-width: 100%;
+  width: 350px;
+  height: auto;
+}
+
+.about-text h3{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: var(--p-font);
+  color: var(--second-color);
+  line-height: 25px;
+  margin-bottom: 20px;
+}
 
 /*      PORTIFOLIO      */
 
@@ -255,9 +279,4 @@ footer {
 .contact {
   height: 500px;
   background-color: aqua;
-}
-.about
-{
-  height: 500px;
-  background-color: #ff00c3;
 }

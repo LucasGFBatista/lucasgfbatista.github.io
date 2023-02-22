@@ -233,6 +233,46 @@ footer {
 }
 
 /*      PORTIFOLIO      */
+.portifolio-head{
+  text-align: center;
+}
+
+.portifolio-head h3{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.portifolio-head p{
+  font-size: var(--p-font);
+  color: var(--second-color);
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.portifolio-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 10px;
+  align-content: center;
+  cursor: pointer;
+}
+
+.col{
+  position: relative;
+}
+
+.col img {
+  max-width: 100%;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+
 
 /*      SERVICES      */
 
@@ -282,7 +322,7 @@ footer {
 
 /*apenas pra visualização inicial*/
 
-.portifolio,
+
 .contact {
   height: 500px;
   background-color: aqua;

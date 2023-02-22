@@ -13,6 +13,16 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #1c1c1c;
+  --main-color: #ff6347;
+  --second-color: #545454;
+  --big-font: 4.5rem;
+  --h2-font: 3.2rem;
+  --p-font: 1.2rem;
+}
+
 body {
   height: 100%;
   background: var(--bg-color);
@@ -31,16 +41,6 @@ header.sticky {
   background: rgba(255, 255, 255, 0.8);
   padding: 5px 0;
   box-shadow: 0 0 10px rgba(0 0 0 / 20%);
-}
-
-:root {
-  --bg-color: #f5f5f5;
-  --text-color: #1c1c1c;
-  --main-color: #ff6347;
-  --second-color: #545454;
-  --big-font: 4.5rem;
-  --h2-font: 3.2rem;
-  --p-font: 1.2rem;
 }
 
 section {
@@ -142,6 +142,7 @@ footer {
   background: var(--main-color);
   transform: scale(1.2);
 }
+
 /*    HOME    */
 .home {
   min-width: 100vh;
@@ -153,23 +154,28 @@ footer {
   align-items: center;
   grid-gap: 5rem;
 }
+
 .home-text h1 {
   margin: 12px 0 25px 0;
   font-size: var(--big-font);
 }
+
 .home-text h5 {
   margin-bottom: 20px;
   font-size: 24px;
 }
+
 .home-text span {
   color: var(--main-color);
 }
+
 .home-text p {
   font-size: var(--p-font);
   color: var(--second-color);
   line-height: 25px;
   margin-bottom: 20px;
 }
+
 .home-social-media a {
   height: 40px;
   width: 40px;
@@ -181,11 +187,13 @@ footer {
   color: var(--bg-color);
   margin: 0 20px 30px 0;
 }
+
 .home-social-media a:hover {
   transform: scale(1.2);
   background-color: rgb(139, 0, 0);
   transition: 0.5s;
 }
+
 .btn {
   display: inline-block;
   color: var(--bg-color);
@@ -199,20 +207,18 @@ footer {
   transform: scale(1.2);
 }
 
-.home-image img{
+.home-image img {
   width: 400px;
   height: 400px;
   border-radius: 10%;
-
 }
 
 /*      ABOUT ME      */
-.about{
+.about {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   align-items: center;
   grid-gap: 2rem;
-
 }
 .about img {
   max-width: 100%;
@@ -220,7 +226,7 @@ footer {
   height: auto;
 }
 
-.about-text h3{
+.about-text h3 {
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -233,23 +239,23 @@ footer {
 }
 
 /*      PORTIFOLIO      */
-.portifolio-head{
+.portifolio-head {
   text-align: center;
 }
 
-.portifolio-head h3{
+.portifolio-head h3 {
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.portifolio-head p{
+.portifolio-head p {
   font-size: var(--p-font);
   color: var(--second-color);
   line-height: 25px;
   margin-bottom: 20px;
 }
 
-.portifolio-content{
+.portifolio-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   grid-gap: 2rem;
@@ -259,34 +265,79 @@ footer {
   cursor: pointer;
 }
 
-.col{
+.col {
   position: relative;
 }
 
 .col img {
   max-width: 100%;
   width: 350px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
+.portfolio-content-text {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.portfolio-content-text:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, #333);
+}
 
+.portifolio-content-text h3 {
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  color: var(--bg-color);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
 
+.portifolio-content-text:hover h3 {
+  bottom: 50%;
+  opacity: 1;
+}
 
+.portifolio-content-text h5 {
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  color: var(--bg-color);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.portifolio-content-text:hover h5 {
+  bottom: 40%;
+  opacity: 1;
+}
 
 /*      SERVICES      */
 
-.services-itens{
+.services-itens {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, auto));
   grid-gap: 2rem;
   align-items: center;
-  text-align: justify;
+  text-align: center;
 }
 
-.service-item{
+.service-item {
   padding: 50px;
-  transition: ease .50s;
+  transition: ease 0.5s;
   cursor: pointer;
 }
 
@@ -297,33 +348,24 @@ footer {
   margin-bottom: 20px;
 }
 
-.service-item h3{
+.service-item h3 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.service-item p{
+.service-item p {
   font-size: var(--p-font);
   color: var(--second-color);
   line-height: 25px;
 }
 
-.service-item:hover{
+.service-item:hover {
   background-color: #fff;
   box-shadow: 20px 0 90px 0 rgb(10 10 70 / 10%);
   border-radius: 12px;
   will-change: transform;
-  transform: perspective(1000px) rotateX(4.80deg) rotateY(10.2deg)
-  scale3d(1.0, 1.0, 1.0);
+  transform: perspective(1000px) rotateX(4.8deg) rotateY(10.2deg)
+    scale3d(1, 1, 1);
 }
 
 /*      CONTACT     */
-
-
-/*apenas pra visualização inicial*/
-
-
-.contact {
-  height: 500px;
-  background-color: aqua;
-}

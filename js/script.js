@@ -16,3 +16,5 @@ menu.onclick = () => {
  	duration:2500,
  	reset: true
  })
+ 
+ sr.reveal('.home-text',{delay:350, origin: 'left'})

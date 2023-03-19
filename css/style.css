@@ -207,7 +207,7 @@ footer {
 .home-image img {
   width: 400px;
   height: 400px;
-  border-radius: 10%;
+  border-radius: 0 0 200px 200px;
 }
 
 /*      ABOUT ME      */

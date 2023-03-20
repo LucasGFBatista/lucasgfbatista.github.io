@@ -1,261 +1,240 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Lucas Gonçalves</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css" />
+  <title>Lucas Gonçalves</title>
 
-    <!--    FONTES GOOGLE   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!--    ICONS FONT AWESOME    -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!--    FONTES GOOGLE   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
 
-    <!--    ICONE ABA DO SITE   -->
-    <link rel="icon" href="imagens/icons/logo.png" />
-  </head>
+  <!--    ICONS FONT AWESOME    -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <!--    HEADER    -->
-    <header class="sticky">
-      <div id="header">
-        <a href="#" class="logo-header">
-          <img
-            src="imagens/icons/logo.png"
-            alt="Suposed to be the icon of the page"
-            width="80"
-          />
+  <!--    ICONE ABA DO SITE   -->
+  <link rel="icon" href="imagens/icons/logo.png" />
+</head>
+
+<body>
+  <!--    HEADER    -->
+  <header class="sticky">
+    <div id="header">
+      <a href="#" class="logo-header">
+        <img src="imagens/icons/logo.png" alt="Suposed to be the icon of the page" width="80" />
+      </a>
+
+      <div class="fa-solid fa-bars" id="navbar-icon"></div>
+
+      <ul class="navbar-header">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre mim</a></li>
+        <li><a href="#portifolio">Portifolio</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#contact">Fale comigo</a></li>
+      </ul>
+      <a href="./assets/docs/curriculo.pdf" download="Currículo - Lucas Gonçalves" target="_blank"
+        class="btn-header">Currículo</a>
+    </div>
+  </header>
+
+  <!--    HOME    -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>Lucas Gonçalves</h1>
+      <h5>Desenvolvedor Júnior <span>de Salvador - Bahia</span></h5>
+      <p>
+        Como desenvolvedor júnior, estou em busca de desafios e oportunidades para crescer na minha carreira.
+      </p>
+      <div class="home-social-media">
+        <a href="https://www.linkedin.com/in/lucasgfbatista/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
         </a>
-
-        <div class="fa-solid fa-bars" id="navbar-icon"></div>
-
-        <ul class="navbar-header">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Sobre mim</a></li>
-          <li><a href="#portifolio">Portifolio</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#contact">Fale comigo</a></li>
-        </ul>
-        <a href="./assets/docs/curriculo.pdf" download="Currículo - Lucas Gonçalves" target="_blank" class="btn-header">Currículo</a>
+        <a href="https://github.com/lucasgfbatista/" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/lucas_gfbatista/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
       </div>
-    </header>
+      <a href="#about" class="btn">Sobre mim</a>
+    </div>
+    <div class="home-image">
+      <img src="imagens/profile-picture.png" alt="My ugly face" />
+    </div>
+  </section>
 
-    <!--    HOME    -->
-    <section class="home" id="home">
-      <div class="home-text">
-        <h1>Lucas Gonçalves</h1>
-        <h5>Desenvolvedor Júnior <span>de Salvador - Bahia</span></h5>
+  <!--    ABOUT ME    -->
+  <section class="about" id="about">
+    <div class="about-image">
+      <img src="imagens/img-01.jpg" alt="" />
+    </div>
+
+    <div class="about-text">
+      <h3>Desenvolvedor Júnior</h3>
+      <p>
+        Como desenvolvedor júnior, estou em busca de oportunidades para aprimorar minhas habilidades e aplicar meus
+        conhecimentos em projetos reais. Sou apaixonado por programação e estou sempre buscando aprender mais, seja por
+        meio de cursos, tutoriais ou projetos pessoais.
+      </p>
+
+      <a href="#" class="btn">Clique aqui!</a>
+    </div>
+  </section>
+
+  <!--    PORTFOLIO    -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-head">
+      <h3>Meus Trabalhos</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="portfolio-content">
+      <div class="col">
+        <img src="imagens/portifolio-img/01.jpg" alt="Essa imagem será alterada" />
+        <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
+        <div class="portfolio-content-text">
+          <h3>Titulo tipo do projeto 1</h3>
+          <h5>Titulo nome do projeto</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <img src="imagens/portifolio-img/02.jpg" alt="Essa imagem será alterada" />
+        <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
+        <div class="portfolio-content-text">
+          <h3>Titulo tipo do projeto 2</h3>
+          <h5>Titulo nome do projeto</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <img src="imagens/portifolio-img/03.jpg" alt="Essa imagem será alterada" />
+        <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
+        <div class="portfolio-content-text">
+          <h3>Titulo tipo do projeto 3</h3>
+          <h5>Titulo nome do projeto</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <img src="imagens/portifolio-img/04.jpg" alt="Essa imagem será alterada" />
+        <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
+        <div class="portfolio-content-text">
+          <h3>Titulo tipo do projeto 4</h3>
+          <h5>Titulo nome do projeto</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <img src="imagens/portifolio-img/05.jpg" alt="Essa imagem será alterada" />
+        <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
+        <div class="portfolio-content-text">
+          <h3>Titulo tipo do projeto 5</h3>
+          <h5>Titulo nome do projeto</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <img src="imagens/portifolio-img/06.jpg" alt="Essa imagem será alterada" />
+        <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
+        <div class="portfolio-content-text">
+          <h3>Titulo tipo do projeto 6</h3>
+          <h5>Titulo nome do projeto</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--    SERVICES    -->
+  <section class="services" id="services">
+    <div class="services-itens" id="services-itens">
+      <div class="service-item">
+        <div class="service-item-image">
+          <img src="imagens/icons/html5.png" alt="" />
+        </div>
+        <h5>HTML 5</h5>
         <p>
-          Como desenvolvedor júnior, estou em busca de desafios e oportunidades para crescer na minha carreira. 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio
+          consequuntur quisquam doloremque eius, laborum rem quam ad modi
+          necessitatibus.
         </p>
-        <div class="home-social-media">
-          <a href="https://www.linkedin.com/in/lucasgfbatista/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/lucasgfbatista/" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/lucas_gfbatista/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+      </div>
+
+
+
+      <div class="service-item">
+        <div class="service-item-image">
+          <img src="imagens/icons/css-3.png" alt="" />
         </div>
-        <a href="#about" class="btn">Sobre mim</a>
-      </div>
-      <div class="home-image">
-        <img src="imagens/profile-picture.png" alt="My ugly face" />
-      </div>
-    </section>
-
-    <!--    ABOUT ME    -->
-    <section class="about" id="about">
-      <div class="about-image">
-        <img src="imagens/img-01.jpg" alt="" />
-      </div>
-
-      <div class="about-text">
-        <h3>Desenvolvedor Júnior</h3>
+        <h5>CSS 3</h5>
         <p>
-          Como desenvolvedor júnior, estou em busca de oportunidades para aprimorar minhas habilidades e aplicar meus conhecimentos em projetos reais. Sou apaixonado por programação e estou sempre buscando aprender mais, seja por meio de cursos, tutoriais ou projetos pessoais.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio
+          consequuntur quisquam doloremque eius, laborum rem quam ad modi
+          necessitatibus.
         </p>
-
-        <a href="#" class="btn">Clique aqui!</a>
-      </div>
-    </section>
-
-    <!--    PORTFOLIO    -->
-    <section class="portfolio" id="portfolio">
-      <div class="portfolio-head">
-        <h3>Meus Trabalhos</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
 
-      <div class="portfolio-content">
-        <div class="col">
-          <img
-            src="imagens/portifolio-img/01.jpg"
-            alt="Essa imagem será alterada"
-          />
-          <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
-          <div class="portfolio-content-text">
-            <h3>Titulo tipo do projeto 1</h3>
-            <h5>Titulo nome do projeto</h5>
-          </div>
+      <div class="service-item">
+        <div class="service-item-image">
+          <img src="imagens/icons/figma.png" alt="" />
         </div>
-
-        <div class="col">
-          <img
-            src="imagens/portifolio-img/02.jpg"
-            alt="Essa imagem será alterada"
-          />
-          <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
-          <div class="portfolio-content-text">
-            <h3>Titulo tipo do projeto 2</h3>
-            <h5>Titulo nome do projeto</h5>
-          </div>
-        </div>
-
-        <div class="col">
-          <img
-            src="imagens/portifolio-img/03.jpg"
-            alt="Essa imagem será alterada"
-          />
-          <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
-          <div class="portfolio-content-text">
-            <h3>Titulo tipo do projeto 3</h3>
-            <h5>Titulo nome do projeto</h5>
-          </div>
-        </div>
-
-        <div class="col">
-          <img
-            src="imagens/portifolio-img/04.jpg"
-            alt="Essa imagem será alterada"
-          />
-          <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
-          <div class="portfolio-content-text">
-            <h3>Titulo tipo do projeto 4</h3>
-            <h5>Titulo nome do projeto</h5>
-          </div>
-        </div>
-
-        <div class="col">
-          <img
-            src="imagens/portifolio-img/05.jpg"
-            alt="Essa imagem será alterada"
-          />
-          <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
-          <div class="portfolio-content-text">
-            <h3>Titulo tipo do projeto 5</h3>
-            <h5>Titulo nome do projeto</h5>
-          </div>
-        </div>
-
-        <div class="col">
-          <img
-            src="imagens/portifolio-img/06.jpg"
-            alt="Essa imagem será alterada"
-          />
-          <!-- ALTERAR ESSA IMAGEM PARA IMAGENS DE PROJETOS REAIS QUE EU TENHA FEITO NO FUTURO-->
-          <div class="portfolio-content-text">
-            <h3>Titulo tipo do projeto 6</h3>
-            <h5>Titulo nome do projeto</h5>
-          </div>
-        </div>
+        <h5>Prototipagem</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio
+          consequuntur quisquam doloremque eius, laborum rem quam ad modi
+          necessitatibus.
+        </p>
       </div>
-    </section>
 
-    <!--    SERVICES    -->
-    <section class="services" id="services">
-      <div class="services-itens" id="services-itens">
-        <div class="service-item">
-          <div class="service-item-image">
-            <img src="imagens/icons/html5.png" alt="" />
-          </div>
-          <h5>HTML 5</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio
-            consequuntur quisquam doloremque eius, laborum rem quam ad modi
-            necessitatibus.
-          </p>
-        </div>
+    </div>
+  </section>
 
-
-
-        <div class="service-item">
-          <div class="service-item-image">
-            <img src="imagens/icons/css-3.png" alt="" />
-          </div>
-          <h5>CSS 3</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio
-            consequuntur quisquam doloremque eius, laborum rem quam ad modi
-            necessitatibus.
-          </p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item-image">
-            <img src="imagens/icons/figma.png" alt="" />
-          </div>
-          <h5>Prototipagem</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio
-            consequuntur quisquam doloremque eius, laborum rem quam ad modi
-            necessitatibus.
-          </p>
-        </div>
-
+  <!--    CONTACT   -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-text">
+        <h3>Fale comigo</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
       </div>
-    </section>
 
-    <!--    CONTACT   -->
-    <section class="contact" id="contact">
-      <div class="contact-container">
-        <div class="contact-text">
-          <h3>Fale comigo</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </div>
+      <div class="form">
+        <form action="contact.php">
 
-        <div class="form">
-          <form action="contact.php" method="POST">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Envie sua mensagem"
-              required
-            />
-            <input type="submit" name="submit" value="ENVIAR MENSAGEM" />
-          </form>
-        </div>
+          <div class="form-left">
+
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required />
+            <input type="email" name="email" id="email" placeholder="E-mail" required />
+            <input type="text" name="subject" id="subject" placeholder="Assunto" required />
+          </div>
+
+          <textarea name="message" id="message cols=" 30" rows="10" placeholder="Digite sua mensagem..."></textarea>
+
+          <input type="submit" name="submit" value="ENVIAR MENSAGEM" />
+        </form>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--    FOOTER    -->
-    <footer>
-      <p>Todos os direitos reservados. &copy;</p>
-    </footer>
-    
-    <!--    JAVASCRIPT SCROLLREVEAL   -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    
-    <!--    JAVASCRIPT    -->
-    <script type="text/javascript" src="js/script.js"></script>
-    
-  </body>
+  <!--    FOOTER    -->
+  <footer>
+    <p>Todos os direitos reservados. &copy;</p>
+  </footer>
+
+  <!--    JAVASCRIPT SCROLLREVEAL   -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--    JAVASCRIPT    -->
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
 </html>

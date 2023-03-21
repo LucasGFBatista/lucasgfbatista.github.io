@@ -1,5 +1,5 @@
 <?php
-    $to = "lucasgf.batista+contanto@gmail.com"; // destinatário
+    $to = "lucasgf.batista+contato@gmail.com"; // destinatário
     
     $subject = "Contato via Portifolio";
     
@@ -10,8 +10,8 @@
 
     $header[] = 'MIME-Version: 1.0';
     $header[] = 'Content-type: text/html; charset=iso-8859-1';
-    $header[] = 'To: $to';
-    $header[] = 'From: $email';
+    $header[] = "To: $to";
+    $header[] = "From: $email";
 
     $status = mail($to, $subject, $message, implode("\r\n", $header));
 

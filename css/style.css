@@ -517,14 +517,24 @@ form{
 		grid-template-columns: 2fr;
 	}
 }
+
 @media(max-width: 480px){
 	.home-image img{
 		max-width: 300px;
 		transition: .3s;
 	}
-	.form input[type="email"]{
+
+	form { display: flex;
+		  flex-wrap: wrap;
+		 }
+	.form input[type="email"],  input[type="text"] {
 		width: 300px;
 		margin-bottom: 5px;
 	}
+
+	.form input[type="submit"]{
+		width: 320px
+	}
+	
 }
 
